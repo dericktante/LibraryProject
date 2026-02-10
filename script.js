@@ -89,5 +89,5 @@ Book.prototype.toggleRead = function() {
 };
 
 
-addBookToLibrary("The Popper", "J.R.R. Tolkien", 310, true);
+addBookToLibrary("We Don't Talk About Bruno", "Encanto", 310, true);
 displayBooks();
