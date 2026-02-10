@@ -14,5 +14,16 @@ function addBookToLibrary(title, author, pages, read){
     return newBook;
 }
 
+function displayBooks(){
+    const libraryDiv = document.getElementById("library");
+    libraryDiv.innerHTML = "";
+    myLibrary.forEach(book => {
+        const bookCard = document.createElement("div"); 
+        bookCard.textContent = book.title;
+        libraryDiv.appendChild(bookCard);
+
+    });
+}
+
 addBookToLibrary("The Popper", "J.R.R. Tolkien", 310, true);
-console.log(myLibrary);
+displayBooks();
